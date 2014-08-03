@@ -1,6 +1,8 @@
 #!"usr"bin"env python
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('..')
 from txt2unicode import tscii2unicode
 
 tscii = "¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû"

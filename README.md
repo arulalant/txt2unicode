@@ -25,6 +25,7 @@ Available Tamil Encode Converters
 Test Status:
 ===========
   1. tscii2unicode works
+  2. other 13 encode needs to test it out
 
 
 Todo:

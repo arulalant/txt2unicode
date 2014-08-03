@@ -19,7 +19,7 @@ Available Tamil Encode Converters
   11. roman2unicode,
   12. tab2unicode,
   13. tam2unicode, 
-  14. tscii2unicode
+  14. tscii2unicode.
 
 
 Test Status:

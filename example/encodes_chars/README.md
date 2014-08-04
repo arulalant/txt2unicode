@@ -12,7 +12,7 @@ So if your input text fully falls only unders the characters of
 Look at the files `dinamani2utf8.unique.chars.txt` and `nakkeeran2utf8.unique.chars.txt`
 
 It seems these two encodes characters are fully falls under commonly available
-773 characters `[all.encodes.common.chars.txt](all.encodes.common.chars.txt)
+773 characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt)
 
 
 **Tip** : If you need to find auto encode of your input text, then make sure that

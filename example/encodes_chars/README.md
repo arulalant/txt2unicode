@@ -1,3 +1,7 @@
+For better understanding, you better look at this [README.md](README.md) file in **vim** or **gedit** or **Emacs** text editor, **not in web browser** !
+
+Look at all available files of `encodes_chars` directory [here]() 
+
 `all.encodes.common.chars.txt` files contains commonly available 773 characters 
 among all encodings.
 

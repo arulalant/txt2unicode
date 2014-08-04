@@ -29,7 +29,7 @@ Auto Find Input Encode & Convert to Unicode
   
   Look at demo for [auto2unicode](example/demo_auto2utf8.py)
   
-  Look at limitation of `auto2unicode` [here](encodes_chars/README.md)
+  Look at limitation of `auto2unicode` [here](example/encodes_chars/README.md)
   
 
 Test Status:

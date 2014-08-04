@@ -5,7 +5,7 @@ So if your input text fully falls only unders the characters of
 [all.encodes.common.chars.txt](all.encodes.common.chars.txt), then auto2unicode will fails.
 
 
-Look at the files `dinamani2utf8.unique.chars.txt` and `nakkeeran2utf8.unique.chars.txt'
+Look at the files `dinamani2utf8.unique.chars.txt` and `nakkeeran2utf8.unique.chars.txt`
 
 It seems these two encodes characters are fully falls under commonly available
 773 characters `[all.encodes.common.chars.txt](all.encodes.common.chars.txt)
@@ -19,48 +19,66 @@ input text.
 eg 1:
 ====
 
-text = """¾¢ÕÅûÙÅ÷ 
+```python
+>>> text = """¾¢ÕÅûÙÅ÷ 
 «ÕÇ¢Â ¾¢ÕìÌÈû  """
 
-uni = tscii2unicode(text)
-
-unicode for above tscii characters are as below
-
+>>> uni = tscii2unicode(text)
+>>> print uni
+```
 திருவள்ளுவர் 
-அருளிய திருக்குறள்  
+அருளிய திருக்குறள்
+
+*unicode for above tscii characters are as shown above*
+
+  
 
 
 eg 2:
 =====
-text = """¾¢ÕÅûÙÅ÷ 
+
+```python
+>>> text = """¾¢ÕÅûÙÅ÷ 
 «ÕÇ¢Â ¾¢ÕìÌÈû  """
 
-uni = auto2unicode(text)
-
-*It print follow msg and return None.*
+>>> uni = auto2unicode(text)
+>>> print uni
+```
 
 **"Need more words to find unique encode out of 773 chars"**
+
+*It print above msg and return None.*
+
+
 
 
 eg 3:
 =====
-text = """¾¢ÕÅûÙÅ÷ 
+
+```python
+>>> text = """¾¢ÕÅûÙÅ÷ 
 «ÕÇ¢Â ¾¢ÕìÌÈû  """
 
-uni = auto2unicode(text)
-
-*It print follow msg and return converted unicode characters.*
+>>> uni = auto2unicode(text)
+>>> print uni
+```
 
 **"Whola! found encode :  tscii2utf8"**
 
-unicode for above tscii characters are as below
+*It print above msg and return converted unicode characters.*
 
 திருவள்ளுவர் அருளிய திருக்குறள்  ௭
+
+*unicode for above tscii characters are as shown above*
+
+
+Look closely at last char of input & output of `eg 1` & `eg 3` in **vim** or **gedit** or **Emacs** text editor, **not in web browser** !
 
 
 note the last char '' in above tscii variable string in eg3 is added compare
 with eg2, because to make distingush from available common chars among all 
 encodings in `all.encodes.common.chars.txt`.  
+
 
 '' char works for 'tscii' encode.
 for other encodes user need to look at this `encodes_chars` directory files &

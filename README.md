@@ -19,8 +19,18 @@ Available Tamil Encode Converters
   11. roman2unicode,
   12. tab2unicode,
   13. tam2unicode, 
-  14. tscii2unicode.
+  14. tscii2unicode,
+  15. **auto2unicode**.
+  
+Auto Find Input Encode & Convert to Unicode
+===========================================
 
+  `auto2unicode` function will try to find encode of input text. If it is found, then it will convert input text to unicode using appropriate encode converters among above 14 encode2unicode converters.
+  
+  Look at demo for [auto2unicode](example/demo_auto2utf8.py)
+  
+  Look at limitation of `auto2unicode` [here](encodes_chars/README.md)
+  
 
 Test Status:
 ===========

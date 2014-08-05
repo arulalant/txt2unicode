@@ -27,7 +27,9 @@ Auto Find Input Encode & Convert to Unicode
 
   `auto2unicode` function will try to find encode of input text. If it is found, then it will convert input text to unicode using appropriate encode converters among available encode converters.
   
-  Out of 14 encodes, 11 encodes can be found by this `auto2unicode`. Except `dinamani`, `nakkeeran` & `tam` encodes, `auto2unicode` function can find input text's encode and will convert it into unicode. [Why?](example/encodes_chars/README.md)
+  Out of 14 encodes, 11 encodes can be found by this `auto2unicode`. 
+  
+  Except `dinamani`, `nakkeeran` & `tam` encodes, `auto2unicode` function can find input text's encode and will convert it into unicode. [Why?](example/encodes_chars/README.md)
   
   Look at demo for [auto2unicode](example/demo_auto2utf8.py)
   

@@ -101,7 +101,7 @@ input text. Find your encode unique compound characters [here]()
 
 Look closely at characters of input & output of `eg 2` & `eg 3` 
 
-In `eg 2` input text has atleast one / more compound characters from [tsciiutf8.unique.chars.txt](tscii2utf8.unique.chars.txt).
+In `eg 2` input text has atleast one / more compound characters from [tscii2utf8.unique.chars.txt](tscii2utf8.unique.chars.txt).
 
 But in `eg 3` input fully falls only under the compund characters of 
 [all.encodes.common.chars.txt](all.encodes.common.chars.txt). So it couldn't find correct encodes of input text ! 

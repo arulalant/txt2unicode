@@ -1,7 +1,7 @@
 
 Look at all available files of `encodes_chars` directory [here]() 
 
-`all.encodes.common.chars.txt` files contains commonly available 580 compound characters among all encodings.
+`all.encodes.common.chars.txt` files contains **commonly available 580 compound characters among all encodings**.
 
 So if your input text fully falls only under the compund characters of 
 [all.encodes.common.chars.txt](all.encodes.common.chars.txt), then auto2unicode will fails. :-(
@@ -68,8 +68,9 @@ input text. Find your encode unique compound characters [here]()
 >>> print uni
 ```
 
-**"Sorry, couldn't find encode :-(***
-***Need more words to find unique encode out of 580 common compound characters"**
+**"Sorry, couldn't find encode :-(**
+
+**Need more words to find unique encode out of 580 common compound characters"**
 
 *It print above msg and return None.*
 
@@ -90,7 +91,7 @@ Regards,
 
 Arulalan.T 
 
-Date : 04.08.2014
+Date : 05.08.2014
 
 
 

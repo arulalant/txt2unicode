@@ -205,8 +205,11 @@ def auto2unicode(text):
     
     # count common encode chars
     clen = len(_all_common_encodes_)
+    msg = "Sorry, couldn't find encode :-(\n"
+    msg += 'Need more words to find unique encode out of %d ' % clen                          
+    msg += 'common compound characters'
     if not unique_chars:        
-        print 'Need more words to find unique encode out of %d chars' % clen                          
+        print msg
         return ''
     # end of if not unique_chars:      
     
@@ -220,8 +223,7 @@ def auto2unicode(text):
                 return convert2unicode(text, encode)                
         # end of if if unique_chars.issubset(encode_keys):
     else:
-        print "Sorry, couldn't find encode"
-        print 'Need more words to find unique encode out of %d chars' % clen
+        print msg
         return ''
     # end of for encode in _all_encodes_:
 # end of def auto2unicode(text):

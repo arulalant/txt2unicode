@@ -143,7 +143,7 @@ def auto2unicode(text):
     
     def get_unique_ch(text): 
         
-        special_chars = ['.', ',', ';', ':','', ' ', '\r', '\t', '\n', '']
+        special_chars = ['.', ',', ';', ':','', ' ', '\r', '\t', '=', '\n', '']
         for line in text:
             for word in line.split(' '):
                 word = set(unicode(word, 'utf-8'))

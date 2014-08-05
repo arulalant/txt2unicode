@@ -106,8 +106,8 @@ In `eg 2` input text has atleast one / more compound characters from [tsciiutf8.
 But in `eg 3` input fully falls only under the compund characters of 
 [all.encodes.common.chars.txt](all.encodes.common.chars.txt). So it couldn't find correct encodes of input text ! 
 
-For other encodes user need to look at this `encodes_chars` [directory]() files &
-identigy atleast one unique char, incert in input text. so that auto2unicode
+For other encodes user need to look at this `encodes_chars` [directory files]() &
+identify atleast one unique char, incert in input text. so that `auto2unicode` function
 can identiy encode for you ! 
 
 

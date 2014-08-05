@@ -3,7 +3,7 @@ Look at all available files of `encodes_chars` directory [here]()
 
 [all.encodes.common.chars.txt](all.encodes.common.chars.txt) file contains **commonly available 580 compound characters among all encodings**.
 
-So if your input text fully falls only under the compund characters of `all.encodes.common.chars.txt`, then auto2unicode will fails. :-(
+So if your input text fully falls only under the compund characters of `all.encodes.common.chars.txt`, then `auto2unicode` will fails. :-(
 
 
 Look at the files [dinamani2utf8.unique.chars.txt](dinamani2utf8.unique.chars.txt) and [nakkeeran2utf8.unique.chars.txt](nakkeeran2utf8.unique.chars.txt). There are fully empty.
@@ -11,11 +11,11 @@ Look at the files [dinamani2utf8.unique.chars.txt](dinamani2utf8.unique.chars.tx
 It seems these two encodes characters are fully falls under commonly available
 580 compound characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt).
 
-So there is **zero %** chance to identify `dinamani` and `nakkeeran` encodes by using `auto2ecnode` function.
+So there is **zero %** chance to identify `dinamani` and `nakkeeran` encodes by using `auto2unicode` function.
 
 Look at the file [tam2utf8.unique.chars.txt](tam2utf8.unique.chars.txt), it has only one unique compound characters.
 
-So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` encode by using `auto2ecnode` function.
+So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` encode by using `auto2unicode` function.
 
 
 **Tip** : If you need to find auto encode of your input text, then make sure that

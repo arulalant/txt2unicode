@@ -12,11 +12,11 @@ Look at the files `dinamani2utf8.unique.chars.txt` and `nakkeeran2utf8.unique.ch
 It seems these two encodes characters are fully falls under commonly available
 580 compound characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt).
 
-So there is **zero %** chance to identify `dinamani` and `nakkeeran` encodes using `auto2ecnode` function.
+So there is **zero %** chance to identify `dinamani` and `nakkeeran` encodes by using `auto2ecnode` function.
 
 Look at the file [tam2utf8.unique.chars.txt](tam2utf8.unique.chars.txt), it has only one unique compound characters.
 
-So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` encode using `auto2ecnode` function.
+So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` encode by using `auto2ecnode` function.
 
 
 **Tip** : If you need to find auto encode of your input text, then make sure that
@@ -92,8 +92,3 @@ Regards,
 Arulalan.T 
 
 Date : 05.08.2014
-
-
-
-
-

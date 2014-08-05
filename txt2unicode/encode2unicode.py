@@ -33,6 +33,11 @@ _all_encodes_ = {'anjal2utf8' : anjal2utf8, 'bamini2utf8' : bamini2utf8,
      'roman2utf8': roman2utf8, 'tab2utf8': tab2utf8, 
      'tam2utf8': tam2utf8, 'tscii2utf8': tscii2utf8}
 
+# By enable this flage, it will write individual encodes unique & common
+# characters in text file.
+__WRITE_CHARS_TXT = False
+
+
 def convert2unicode(text, charmap):
     
     if isinstance(text, (list, tuple)):
@@ -114,6 +119,7 @@ def auto2unicode(text):
     _all_unique_encodes_ = []
     _all_unicode_encodes_ = {}
     _all_common_encodes_ = set([])
+    _all_common_encodes_single_char_ = set([])
     
     for name, encode in _all_encodes_:
         encode_utf8 = set([unicode(ch, 'utf-8') for ch in encode.keys()])
@@ -135,7 +141,15 @@ def auto2unicode(text):
         _all_unique_encodes_.append((supname, super_encode))    
     # end of for supname, super_encode in _all_encodes_:
     
-    unique_chars = set([])
+    for ch in _all_common_encodes_:
+        # collect single common chars
+        if len(ch) == 1: _all_common_encodes_single_char_.add(ch)
+    # end of for ch in _all_common_encodes_:
+    
+    # remove single common char from compound common chars
+    _all_common_encodes_ -= _all_common_encodes_single_char_
+    
+    unique_chars = ''
     if isinstance(text, str):
         text = text.split("\n")
     elif isinstance(text, (list, tuple)):
@@ -143,42 +157,67 @@ def auto2unicode(text):
     
     def get_unique_ch(text): 
         
-        special_chars = ['.', ',', ';', ':','', ' ', '\r', '\t', '=', '\n', '']
+        special_chars = ['.', ',', ';', ':','', ' ', '\r', '\t', '=', '\n']
         for line in text:
             for word in line.split(' '):
-                word = set(unicode(word, 'utf-8'))
-                # get unique chars from user passed word 
-                unique_chars = word - _all_common_encodes_
-                # if len of unique_chars is zero, then go for another word 
-                if not unique_chars: continue
+                word = unicode(word, 'utf-8')
+                for ch in _all_common_encodes_: 
+                    if ch in word: word = word.replace(ch, '')
+                # end of for ch in _all_common_encodes_:                             
+              
+                # if len of word is zero, then go for another word 
+                if not word: continue
                  
-                unique_chars_clean = unique_chars.copy()
-                for ch in unique_chars:
+                for ch in word:
                     if ch.isdigit() or ch in special_chars: 
                         # remove special common chars
-                        unique_chars_clean.remove(ch)
+                        word = word.repl(ch, '')
                         continue
                     # end of if ch.isdigit() or ...:
                     # Whola, got unique chars from user passed text  
-                    return unique_chars_clean
-                # end of for ch in unique_chars:
+                    return word
+                # end of for ch in word:
             # end of for word in line.split(' '):
-        # end of for line in text:   
-    # end of def unique_ch(text): 
-
+        # end of for line in text: 
+        return ''          
+    # end of def  get_unique_ch(text): 
+    
+    # get unique word which falls under any one of available encodes from 
+    # user passed text lines
     unique_chars = get_unique_ch(text)
+    
+    if __WRITE_CHARS_TXT:
+        f = open('all.encodes.common.chars.txt', 'w')
+        for ch in _all_common_encodes_:
+            ch = ch.encode('utf-8')
+            f.write(ch+'\n')
+        # end of for ch in _all_common_encodes_:
+        f.close()
+        
+        for encode_name, encode_keys in _all_unique_encodes_: 
+            f = open(encode_name+ '.unique.chars.txt', 'w')
+            for ch in encode_keys:
+                ch = ch.encode('utf-8')
+                f.write(ch+'\n')
+            f.close()
+        # end of for encode_name, encode_keys in _all_unique_encodes_: 
+    # end of if __WRITE_CHARS_TXT:
+    
+    # count common encode chars
     clen = len(_all_common_encodes_)
     if not unique_chars:        
         print 'Need more words to find unique encode out of %d chars' % clen                          
         return ''
-    # end of if not unique_chars: 
+    # end of if not unique_chars:      
     
     for encode_name, encode_keys in _all_unique_encodes_:  
         if not len(encode_keys): continue
-        if unique_chars.issubset(encode_keys):
-            # found encode
-            print "Whola! found encode : ", encode_name
-            return convert2unicode(text, encode)                
+        for ch in encode_keys: 
+            # check either encode char is presnent in word 
+            if ch in unique_chars:
+                # found encode
+                print "Whola! found encode : ", encode_name
+                return convert2unicode(text, encode)                
         # end of if if unique_chars.issubset(encode_keys):
     else:
         print "Sorry, couldn't find encode"

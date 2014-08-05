@@ -1,120 +1,120 @@
-nls
-nws
-Ngh
-lP
-NQh
-Noh
-n\h
-q;
-\;
-Wh
-n\s
-Jh
-lp
-ngs
-\*
-qP
-noh
-\P
-Nfh
-N]h
-qp
-\p
-n]h
-nes
-nfs
-qh
-Nqh
-\h
-]P
-Neh
-nus
-njs
-\[;
-Nq
-Ns
-]p
-Nth
-o;
-வு10
-]h
-Ndh
-N\[h
-யு10
-ntt
-\[{
-\[p
-oP
-Zh
-oh
-];
-\[_
-n]s
-Nlh
-nds
-n\[s
-\[P
-op
-Nj
-Nk
-Nl
-N`
-Nd
-Nf
-Ng
-Ny
-Nz
-n`h
-`;
-Nr
-nss
-Nt
-n``
-Nw
-Nrh
-Nkh
-G\+
-N]
-NQ
-N\h
-hp
-பு10
-`p
-nks
-nrs
-Nzh
-nzs
-hP
-Njh
-`P
-A\+
-Nuh
-N\[
-nqs
-iq
-Nah
-Nyh
-n\
-n]
-io
-i`
-nqh
-Yh
-i]
-i\
-Dh
-Z}
-n`
-nys
-A+
-nas
-nq
-=
-`h
-Qh
-Nsh
-nQs
-Nwh
-Sh
-N`h
-nQh
+nls  =>  டௌ
+nws  =>  றௌ
+Ngh  =>  போ
+lP  =>  டீ
+NQh  =>  ஞோ
+Noh  =>  ழோ
+n\h  =>  ஷொ
+q;  =>  ங்
+\;  =>  ஷ்
+Wh  =>  றூ
+n\s  =>  ஷௌ
+Jh  =>  தூ
+lp  =>  டி
+ngs  =>  பௌ
+\*  =>  ழூ
+qP  =>  ஙீ
+noh  =>  ழொ
+\P  =>  ஷீ
+Nfh  =>  கோ
+N]h  =>  ஸோ
+qp  =>  ஙி
+\p  =>  ஷி
+n]h  =>  ஸொ
+nes  =>  நௌ
+nfs  =>  கௌ
+qh  =>  ஙா
+Nqh  =>  ஙோ
+\h  =>  ஷா
+]P  =>  ஸீ
+Neh  =>  நோ
+nus  =>  ரௌ
+njs  =>  தௌ
+\[;  =>  ஜ்
+Nq  =>  ஙே
+Ns  =>  ளே
+]p  =>  ஸி
+Nth  =>  வோ
+o;  =>  ழ்
+வு10  =>  வூ
+]h  =>  ஸா
+Ndh  =>  னோ
+N\[h  =>  ஜோ
+யு10  =>  யூ
+ntt  =>  வௌ
+\[{  =>  ஜு
+\[p  =>  ஜி
+oP  =>  ழீ
+Zh  =>  ணூ
+oh  =>  ழா
+];  =>  ஸ்
+\[_  =>  ஜூ
+n]s  =>  ஸௌ
+Nlh  =>  டோ
+nds  =>  னௌ
+n\[s  =>  ஜௌ
+\[P  =>  ஜீ
+op  =>  ழி
+Nj  =>  தே
+Nk  =>  மே
+Nl  =>  டே
+N`  =>  ஹே
+Nd  =>  னே
+Nf  =>  கே
+Ng  =>  பே
+Ny  =>  லே
+Nz  =>  ணே
+n`h  =>  ஹொ
+`;  =>  ஹ்
+Nr  =>  சே
+nss  =>  ளௌ
+Nt  =>  வே
+n``  =>  ஹௌ
+Nw  =>  றே
+Nrh  =>  சோ
+Nkh  =>  மோ
+G\+  =>  பூ
+N]  =>  ஸே
+NQ  =>  ஞே
+N\h  =>  ஷோ
+hp  =>  ரி
+பு10  =>  பூ
+`p  =>  ஹி
+nks  =>  மௌ
+nrs  =>  சௌ
+Nzh  =>  ணோ
+nzs  =>  ணௌ
+hP  =>  ரீ
+Njh  =>  தோ
+`P  =>  ஹீ
+A\+  =>  யூ
+Nuh  =>  ரோ
+N\[  =>  ஜே
+nqs  =>  ஙௌ
+iq  =>  ஙை
+Nah  =>  யோ
+Nyh  =>  லோ
+n\  =>  ஷெ
+n]  =>  ஸெ
+io  =>  ழை
+i`  =>  ஹை
+nqh  =>  ஙொ
+Yh  =>  லூ
+i]  =>  ஸை
+i\  =>  ஷை
+Dh  =>  னூ
+Z}  =>  ணூ
+n`  =>  ஹெ
+nys  =>  லௌ
+A+  =>  யூ
+nas  =>  யௌ
+nq  =>  ஙெ
+=  =>  ஸ்ரீ
+`h  =>  ஹா
+Qh  =>  ஞா
+Nsh  =>  ளோ
+nQs  =>  ஞௌ
+Nwh  =>  றோ
+Sh  =>  ளூ
+N`h  =>  ஹோ
+nQh  =>  ஞொ

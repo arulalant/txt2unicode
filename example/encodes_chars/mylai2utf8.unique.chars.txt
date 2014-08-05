@@ -1,192 +1,192 @@
-Eya
-eda
-epq
-edq
-y<
-y>
-Eqa
-W\
-lf
-EXa
-ela
-tf
-elq
-xa
-df
-yf
-Era
-Ab
-e\[a
-ema
-Eba
-eva
-\{
-qa
-e\[q
-emq
-qf
-evq
-Eza
-em
-el
-en
-eba
-ek
-ej
-ed
-eg
-Eha
-ezq
-ec
-eb
-E]a
-ebq
-ez
-et
-ew
-ev
-eq
-eza
-es
-er
-esq
-Exa
-eja
-e]
-rf
-]f
-]a
-eX
-esa
-]i
-ejq
-wf
-E\[a
-eca
-\[i
-\[f
-\[a
-E]
-EX
-ecq
-jf
-Epa
-Em
-El
-En
-e]q
-Ek
-\[I
-Ed
-Eg
-Ec
-Eb
-eta
-jH
-Ex
-jJ
-Ez
-Et
-Ew
-Ev
-Eq
-Ep
-Es
-Er
-ci
-xi
-h>
-A\[
-Ena
-ca
-Ela
-xf
-cf
-ekq
-Ega
-eya
-cI
-xI
-XI  
-ehq
-eqq
-A]
-af
-eyq
-pf
-Ey
-eha
-eqa
-Ewa
-XJ
-XH
-Ema
-Eva
-\{\
-etq
-hf
-kf
-E\[
-mf
-erq
-}\
-Ej
-p>
-p<
-era
-ey
-egq
-ex
-YM
-vf
-eXa
-Eja
-YZ
-eka
-Esa
-eXq
-YQ
-YR
-b>
-ena
-T\
-Eca
-]I
-ewa
-Xf
-zf
-enq
-e\[
-e]a
-ewq
-At
-exq
-Eka
-Eta
-L>
-AX
-v<
-v>
-Ac
-Eda
-Ad
-Ag
-exa
-Ak
-Aj
-Am
-Al
-An
-Aq
-Ap
-As
-Ar
-oq
-Aw
-Av
-Ay
-Ax
-ega
-Az
-sf
-epa
+Eya  =>  யோ
+eda  =>  டொ
+epq  =>  பௌ
+edq  =>  டௌ
+y<  =>  யு
+y>  =>  யூ
+Eqa  =>  ளோ
+W\  =>  ஞூ
+lf  =>  ல்
+EXa  =>  க்ஷோ
+ela  =>  லொ
+tf  =>  த்
+elq  =>  லௌ
+xa  =>  ஷா
+df  =>  ட்
+yf  =>  ய்
+Era  =>  ரோ
+Ab  =>  றை
+e\[a  =>  னொ
+ema  =>  மொ
+Eba  =>  றோ
+eva  =>  வொ
+\{  =>  னு
+qa  =>  ளா
+e\[q  =>  னௌ
+emq  =>  மௌ
+qf  =>  ள்
+evq  =>  வௌ
+Eza  =>  ழோ
+em  =>  மெ
+el  =>  லெ
+en  =>  நெ
+eba  =>  றொ
+ek  =>  கெ
+ej  =>  ஜெ
+ed  =>  டெ
+eg  =>  ஙெ
+Eha  =>  ஹோ
+ezq  =>  ழௌ
+ec  =>  செ
+eb  =>  றெ
+E]a  =>  ணோ
+ebq  =>  றௌ
+ez  =>  ழெ
+et  =>  தெ
+ew  =>  ஞெ
+ev  =>  வெ
+eq  =>  ளெ
+eza  =>  ழொ
+es  =>  ஸெ
+er  =>  ரெ
+esq  =>  ஸௌ
+Exa  =>  ஷோ
+eja  =>  ஜொ
+e]  =>  ணெ
+rf  =>  ர்
+]f  =>  ண்
+]a  =>  ணா
+eX  =>  க்ஷெ
+esa  =>  ஸொ
+]i  =>  ணி
+ejq  =>  ஜௌ
+wf  =>  ஞ்
+E\[a  =>  னோ
+eca  =>  சொ
+\[i  =>  னி
+\[f  =>  ன்
+\[a  =>  னா
+E]  =>  ணே
+EX  =>  க்ஷே
+ecq  =>  சௌ
+jf  =>  ஜ்
+Epa  =>  போ
+Em  =>  மே
+El  =>  லே
+En  =>  நே
+e]q  =>  ணௌ
+Ek  =>  கே
+\[I  =>  னீ
+Ed  =>  டே
+Eg  =>  ஙே
+Ec  =>  சே
+Eb  =>  றே
+eta  =>  தொ
+jH  =>  ஜு
+Ex  =>  ஷே
+jJ  =>  ஜூ
+Ez  =>  ழே
+Et  =>  தே
+Ew  =>  ஞே
+Ev  =>  வே
+Eq  =>  ளே
+Ep  =>  பே
+Es  =>  ஸே
+Er  =>  ரே
+ci  =>  சி
+xi  =>  ஷி
+h>  =>  ஹூ
+A\[  =>  னை
+Ena  =>  நோ
+ca  =>  சா
+Ela  =>  லோ
+xf  =>  ஷ்
+cf  =>  ச்
+ekq  =>  கௌ
+Ega  =>  ஙோ
+eya  =>  யொ
+cI  =>  சீ
+xI  =>  ஷீ
+XI    =>  க்ஷீ
+ehq  =>  ஹௌ
+eqq  =>  ளௌ
+A]  =>  ணை
+af  =>  ர்
+eyq  =>  யௌ
+pf  =>  ப்
+Ey  =>  யே
+eha  =>  ஹொ
+eqa  =>  ளொ
+Ewa  =>  ஞோ
+XJ  =>  க்ஷூ
+XH  =>  க்ஷு
+Ema  =>  மோ
+Eva  =>  வோ
+\{\  =>  னூ
+etq  =>  தௌ
+hf  =>  ஹ்
+kf  =>  க்
+E\[  =>  னே
+mf  =>  ம்
+erq  =>  ரௌ
+}\  =>  ணூ
+Ej  =>  ஜே
+p>  =>  பூ
+p<  =>  பு
+era  =>  ரொ
+ey  =>  யெ
+egq  =>  ஙௌ
+ex  =>  ஷெ
+YM  =>  மூ
+vf  =>  வ்
+eXa  =>  க்ஷொ
+Eja  =>  ஜோ
+YZ  =>  ழூ
+eka  =>  கொ
+Esa  =>  ஸோ
+eXq  =>  க்ஷௌ
+YQ  =>  ளூ
+YR  =>  ரூ
+b>  =>  றூ
+ena  =>  நொ
+T\  =>  தூ
+Eca  =>  சோ
+]I  =>  ணீ
+ewa  =>  ஞொ
+Xf  =>  க்ஷ்
+zf  =>  ழ்
+enq  =>  நௌ
+e\[  =>  னெ
+e]a  =>  ணொ
+ewq  =>  ஞௌ
+At  =>  தை
+exq  =>  ஷௌ
+Eka  =>  கோ
+Eta  =>  தோ
+L>  =>  லூ
+AX  =>  க்ஷை
+v<  =>  வு
+v>  =>  வூ
+Ac  =>  சை
+Eda  =>  டோ
+Ad  =>  டை
+Ag  =>  ஙை
+exa  =>  ஷொ
+Ak  =>  கை
+Aj  =>  ஜை
+Am  =>  மை
+Al  =>  லை
+An  =>  நை
+Aq  =>  ளை
+Ap  =>  பை
+As  =>  ஸை
+Ar  =>  ரை
+oq  =>  ஔ
+Aw  =>  ஞை
+Av  =>  வை
+Ay  =>  யை
+Ax  =>  ஷை
+ega  =>  ஙொ
+Az  =>  ழை
+sf  =>  ஸ்
+epa  =>  பொ

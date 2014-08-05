@@ -1,6 +1,8 @@
 txt2unicode
 ===========
-Tamil Text Encode to Unicode Converter
+Tamil Text Encode to Unicode Converter.
+
+Don't you know what is your text encode ? Don't worry. This `txt2unicode` will find it & convert to unicode for you :-)
 
 
 Available Tamil Encode Converters

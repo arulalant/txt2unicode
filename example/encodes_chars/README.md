@@ -1,13 +1,12 @@
 
 Look at all available files of `encodes_chars` directory [here]() 
 
-`all.encodes.common.chars.txt` files contains **commonly available 580 compound characters among all encodings**.
+[all.encodes.common.chars.txt](all.encodes.common.chars.txt) file contains **commonly available 580 compound characters among all encodings**.
 
-So if your input text fully falls only under the compund characters of 
-[all.encodes.common.chars.txt](all.encodes.common.chars.txt), then auto2unicode will fails. :-(
+So if your input text fully falls only under the compund characters of `all.encodes.common.chars.txt`, then auto2unicode will fails. :-(
 
 
-Look at the files `dinamani2utf8.unique.chars.txt` and `nakkeeran2utf8.unique.chars.txt`. There are fully empty.
+Look at the files [dinamani2utf8.unique.chars.txt](dinamani2utf8.unique.chars.txt) and [nakkeeran2utf8.unique.chars.txt](nakkeeran2utf8.unique.chars.txt). There are fully empty.
 
 It seems these two encodes characters are fully falls under commonly available
 580 compound characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt).
@@ -22,6 +21,31 @@ So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` enc
 **Tip** : If you need to find auto encode of your input text, then make sure that
 atleast one compund characters from encode_name.unique.chars.txt file available in your 
 input text. Find your encode unique compound characters [here]() 
+
+
+| S.No  | Enocdes | Unique Chars|
+| ---- | :--------- | :---------: |
+| 1  |  [anjal](anjal2utf8.unique.chars.txt) | 191 |
+| 2  | [bamini](bamini2utf8.unique.chars.txt)  | 120 |
+| 3  | [boomi](boomi2utf8.unique.chars.txt)  | 168 |
+| 4  | [dinakaran](dinakaran2utf8.unique.chars.txt) | 88 |
+| 5  | [dinamani](dinamani2utf8.unique.chars.txt)  | **0** |
+| 6  | [dinathanthy](dinathanthy2utf8.unique.chars.txt)  | 176  |
+| 7  | [kavipriya](kavipriya2utf8.unique.chars.txt)  | 39 |
+| 8  | [murasoli](murasoli2utf8.unique.chars.txt)  | 53 |
+| 9  | [mylai](mylai2utf8.unique.chars.txt)  | 192 |
+| 10  | [nakkeeran](nakkeeran2utf8.unique.chars.txt)   | **0** |
+| 11 | [roman](roman2utf8.unique.chars.txt)  | 543 |
+| 12  | [tab](tab2utf8.unique.chars.txt)  | 70 |
+| 13 | [tam](tam2utf8.unique.chars.txt)  | **1** |
+| 14 | [tscii](tscii2utf8.unique.chars.txt)   | 214 |
+
+
+| S.No| Common Compound Characters                 | Count |
+| ---| -------------------------------------------------------|:-----:|
+| 1 | [common characters in all encodes](all.encodes.common.chars.txt) | 580 |
+
+
 
 
 #eg 1:#

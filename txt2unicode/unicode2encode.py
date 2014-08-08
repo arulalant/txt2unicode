@@ -25,6 +25,9 @@ from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
     kavipriya2utf8, murasoli2utf8, mylai2utf8, nakkeeran2utf8, \
     roman2utf8, tab2utf8, tam2utf8, tscii2utf8
 
+from encode2unicode import _all_encodes_, _get_unique_ch, \
+                                _get_unique_common_encodes
+
 
 def unicode2encode(text, charmap):
     '''
@@ -33,7 +36,7 @@ def unicode2encode(text, charmap):
     if isinstance(text, (list, tuple)):
         unitxt = ''
         for line in text:
-            for val,key in charmap.iteritems():  
+            for val,key in charmap.iteritems():
                 if key in text:
                     line = line.replace(key, val)
                 # end of if val in text:
@@ -42,7 +45,7 @@ def unicode2encode(text, charmap):
         return unitxt
     elif isinstance(text, str):
         for val,key in charmap.iteritems():
-            if key in text: 
+            if key in text:
                 text = text.replace(key, val)
         # end of for val,key in charmap.iteritems():
         return text
@@ -90,4 +93,53 @@ def unicode2tam(text):
 
 def unicode2tscii(text):
     return unicode2encode(text, tscii2utf8)
+
+def unicode2auto(unicode_text, encode_text):
+    """
+    This function will convert unicode (first argument) text into other
+    encodes by auto find the encode (from available encodes) by using sample
+    encode text in second argument of this function.
+
+    unicode_text : Pass unicode string which has to convert into other encode.
+    encode_text : Pass sample encode string to identify suitable encode for it.
+
+    This function tries to identify encode in available encodings.
+    If it finds, then it will convert unicode_text into encode string.
+
+    Author : Arulalan.T
+
+    08.08.2014
+
+    """
+
+    _all_unique_encodes_, _all_common_encodes_ = _get_unique_common_encodes()
+    # get unique word which falls under any one of available encodes from
+    # user passed text lines
+    unique_chars = _get_unique_ch(encode_text, _all_common_encodes_)
+    # count common encode chars
+    clen = len(_all_common_encodes_)
+    msg = "Sorry, couldn't find encode :-(\n"
+    msg += 'Need more words to find unique encode out of %d ' % clen
+    msg += 'common compound characters'
+    if not unique_chars:
+        print msg
+        return ''
+    # end of if not unique_chars:
+
+    for encode_name, encode_keys in _all_unique_encodes_:
+        if not len(encode_keys): continue
+        for ch in encode_keys:
+            # check either encode char is presnent in word
+            if ch in unique_chars:
+                # found encode
+                print "Whola! found encode : ", encode_name
+                encode = _all_encodes_[encode_name]
+                return unicode2encode(unicode_text, encode)
+            # end of if ch in unique_chars:
+        # end of ifor ch in encode_keys:
+    else:
+        print msg
+        return ''
+    # end of for encode in _all_unique_encodes_:
+# end of def auto2unicode(text):
 

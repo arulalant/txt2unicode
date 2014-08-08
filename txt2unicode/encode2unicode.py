@@ -44,13 +44,17 @@ def convert2unicode(text, charmap):
         unitxt = ''
         for line in text:
             for key,val in charmap.iteritems():
-                line = line.replace(key, val)
+                if key in text:
+                    line = line.replace(key, val)
+                # end of if key in text:
             unitxt += line
         # end of for line in text:
         return unitxt
     elif isinstance(text, str):
         for key,val in charmap.iteritems():
-            text = text.replace(key, val)
+            if key in text:
+                text = text.replace(key, val)
+            # end of if key in text:
         # end of for key,val in charmap.iteritems():
         return text
     # end of if isinstance(text, (list, tuple)):

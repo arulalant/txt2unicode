@@ -17,6 +17,9 @@ f.write("From unicode to tscii : " + tscii_from_uni + "\n\n")
 f.write("Again back to unicode from above tscii : " +  uni_2)
 f.close()
 
+assert (uni_1 == uni_2), " Both unicode are 'not' same! "
+assert (tscii == tscii_from_uni), " Both tscii are 'not' same! "
+
 print "tscii original input", tscii
 print "from tscii2unicode", uni_1 
 print "from unicode2tscii", tscii_from_uni

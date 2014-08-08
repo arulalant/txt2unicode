@@ -7,7 +7,8 @@ from txt2unicode import tscii2unicode, unicode2tscii, unicode2auto, auto2unicode
 
 uni_1 = """திருவள்ளுவர் அருளிய திருக்குறள்    """
 tscii = unicode2tscii(uni_1)
-tscii_from_auto = unicode2auto(uni_1, tscii)
+tscii_sample = tscii.split(' ')[0]
+tscii_from_auto = unicode2auto(uni_1, tscii_sample)
 uni_2 = auto2unicode(tscii_from_auto)
 
 f = open('auto_encode-result.txt', 'w')

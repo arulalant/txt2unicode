@@ -24,7 +24,7 @@ Available Tamil Encode Converters
 | 12| டேப்    | Tab  | tab2unicode  | unicode2tab|
 | 13| டாம்   |  Tam  |tam2unicode | unicode2tam|
 | 14| டிஸ்கி |Tscii  |    tscii2unicode|   unicode2tscii|
-| 15| கண்டுபுடி| AutoFind | **auto2unicode**|      --   |
+| 15| கண்டுபுடி| AutoFind | **auto2unicode**|       **unicode2auto**           |
 
 
 Auto Find Input Encode & Convert to Unicode
@@ -36,16 +36,24 @@ Auto Find Input Encode & Convert to Unicode
   
   Except `dinamani`, `nakkeeran` & `tam` encodes, `auto2unicode` function can find input text's encode and will convert it into unicode. [Why?](example/encodes_chars/README.md)
   
-  Look at demo for [auto2unicode](example/demo_auto2utf8.py)
+  Look at demo of [tscii2unicode](example/demo_tscii2utf8.py) converter
+
+  Look at demo of [auto2unicode](example/demo_auto2utf8.py) converter
   
-  Look at limitation of `auto2unicode` [here](example/encodes_chars/README.md)
+  Look at **limitation of `auto2unicode`** [here](example/encodes_chars/README.md)
   
+  
+
   
 Convert From Unicode to Encode
 ==============================
   Here reverse engine of `encode2unicode` used to convert back to encode from unicode.
+  
   Look at above table for available `unicode2encode` functions.
-  Look demo for `unicode2tscii` converter [here](example/demo_utf8_2_tscii.py)
+  
+  Look at demo of [unicode2tscii](example/demo_utf8_2_tscii.py) converter
+  
+  Look at demo of [unicode2auto](example/demo_utf8_2_auto.py) converter
   
 
 Test Status:

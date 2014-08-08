@@ -137,6 +137,38 @@ From unicode to tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû
 
 Again back to unicode from above tscii : திருவள்ளுவர் அருளிய திருக்குறள்  
 
+
+#[eg 5](demo_utf8_2_auto.py):#
+*The below code shows example for auto reverse engine, i.e. `unicode2auto`*
+
+```python
+>>> uni_1 = """திருவள்ளுவர் அருளிய திருக்குறள்    """
+>>> tscii = unicode2tscii(uni_1)
+>>> tscii_sample = tscii.split(' ')[0]
+>>> tscii_from_auto = unicode2auto(uni_1, tscii_sample)
+>>> uni_2 = auto2unicode(tscii_from_auto)
+
+>>> print "unicode original input", uni_1
+>>> print "from unicode2tscii", tscii  
+>>> print "from unicode2auto", tscii_from_auto
+>>> print "back to unicode", uni_2
+```
+ 
+ *Outputs of the above snippet which convert in bothways by auto functions*
+
+Whola! found encode :  tscii2utf8
+
+Whola! found encode :  tscii2utf8
+
+Initial unicode : திருவள்ளுவர் அருளிய திருக்குறள்    
+
+From unicode to tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû    
+
+From unicode to tscii by auto function : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû    
+
+Again back to unicode from above tscii by auto function: திருவள்ளுவர் அருளிய திருக்குறள்  
+
+
 ------------------------------------------------------------------------------------------------------------
 
 Regards,

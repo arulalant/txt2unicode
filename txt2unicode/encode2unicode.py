@@ -39,7 +39,9 @@ __WRITE_CHARS_TXT = False
 
 
 def convert2unicode(text, charmap):
-
+    '''
+    charmap : dictionary which has both encode as key, unicode as value
+    '''
     if isinstance(text, (list, tuple)):
         unitxt = ''
         for line in text:

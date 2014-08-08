@@ -48,7 +48,7 @@ input text. Find your encode unique compound characters [here]()
 
 
 
-#eg 1:#
+#[eg 1](demo_tscii2utf8.py):#
 
 
 ```python
@@ -63,7 +63,7 @@ input text. Find your encode unique compound characters [here]()
 *unicode for above tscii characters are as shown above*
 
 
-#eg 2:#
+#[eg 2](../demo_auto2utf8.py):#
 
 ```python
 >>> text = """¾¢ÕÅûÙÅ÷ 
@@ -109,6 +109,33 @@ But in `eg 3` input fully falls only under the compund characters of
 For other encodes user need to look at this `encodes_chars` [directory files]() &
 identify atleast one unique char, incert in input text. so that `auto2unicode` function
 can identiy encode for you ! 
+
+
+#[eg 4](../demo_utf8_2_tscii.py):#
+
+*The below code shows example for reverse engine, i.e. `unicode2encode`*
+
+```python
+>>> tscii = """¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû  """
+>>> uni_1 = tscii2unicode(tscii)
+>>> tscii_from_uni = unicode2tscii(uni_1)
+>>> uni_2 = tscii2unicode(tscii_from_uni)
+
+>>> print "tscii original input", tscii
+>>> print "from tscii2unicode", uni_1 
+>>> print "from unicode2tscii", tscii_from_uni
+>>> print "back to unicode", uni_2
+```
+
+  *Outputs of the above snippet which convert in bothways* 
+
+Initial tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû 
+
+From tscii to unicode : திருவள்ளுவர் அருளிய திருக்குறள்  
+
+From unicode to tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû  
+
+Again back to unicode from above tscii : திருவள்ளுவர் அருளிய திருக்குறள்  
 
 
 Regards,

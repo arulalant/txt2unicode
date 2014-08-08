@@ -8,7 +8,7 @@ Don't you know what is your text encode ? Don't worry. This `txt2unicode` will f
 Available Tamil Encode Converters
 =================================
 
-| S.No  | எழுத்துரு | Encode Name | To Unicoce Converter | To Encode Convereter |
+| S.No  | எழுத்துரு | Encode Name | To Unicode Converter | To Encode Convereter |
 | ---- | :---------: | :---------: | :---------: | :---------: |
 | 1 | அஞ்சல் | Anjal | anjal2unicode | unicode2anjal|
 | 2 |  பாமினி | Bamini|  bamini2unicode| unicode2bamini|

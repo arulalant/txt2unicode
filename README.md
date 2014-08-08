@@ -40,10 +40,20 @@ Auto Find Input Encode & Convert to Unicode
   
   Look at limitation of `auto2unicode` [here](example/encodes_chars/README.md)
   
+  
+Convert From Unicode to Encode
+==============================
+  Here reverse engine of `encode2unicode` used to convert back to encode from unicode.
+  Look at above table for available `unicode2encode` functions.
+  Look demo for `unicode2tscii` converter [here](example/demo_utf8_2_tscii.py)
+  
 
 Test Status:
 ===========
-  1. tscii2unicode works
+  1. auto2unicode works
+  2. tscii2unicode works
+  3. unicode2tscii works
+   
 
 
 Todo:

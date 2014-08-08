@@ -121,15 +121,15 @@ can identiy encode for you !
 >>> tscii_from_uni = unicode2tscii(uni_1)
 >>> uni_2 = tscii2unicode(tscii_from_uni)
 
->>> print "tscii original input", tscii
->>> print "from tscii2unicode", uni_1 
->>> print "from unicode2tscii", tscii_from_uni
->>> print "back to unicode", uni_2
+>>> print "Tscii original input", tscii
+>>> print "From tscii to unicode :", uni_1 
+>>> print "From unicode to tscii :", tscii_from_uni
+>>> print "Again back to unicode from above tscii :", uni_2
 ```
 
   *Outputs of the above snippet which convert in bothways* 
 
-Initial tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû 
+Tscii original input : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû 
 
 From tscii to unicode : திருவள்ளுவர் அருளிய திருக்குறள்  
 
@@ -148,10 +148,10 @@ Again back to unicode from above tscii : திருவள்ளுவர் �
 >>> tscii_from_auto = unicode2auto(uni_1, tscii_sample)
 >>> uni_2 = auto2unicode(tscii_from_auto)
 
->>> print "unicode original input", uni_1
->>> print "from unicode2tscii", tscii  
->>> print "from unicode2auto", tscii_from_auto
->>> print "back to unicode", uni_2
+>>> print "Unicode original input :", uni_1
+>>> print "From unicode to tscii :", tscii  
+>>> print "From unicode to tscii :", tscii_from_auto
+>>> print "From unicode to tscii by auto function :", uni_2
 ```
  
  *Outputs of the above snippet which convert in bothways by auto functions*
@@ -160,7 +160,7 @@ Whola! found encode :  tscii2utf8
 
 Whola! found encode :  tscii2utf8
 
-Initial unicode : திருவள்ளுவர் அருளிய திருக்குறள்    
+Unicode original input : திருவள்ளுவர் அருளிய திருக்குறள்    
 
 From unicode to tscii : ¾¢ÕÅûÙÅ÷ «ÕÇ¢Â ¾¢ÕìÌÈû    
 

@@ -23,7 +23,8 @@
 from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
     dinakaran2utf8, dinamani2utf8, dinathanthy2utf8, \
     kavipriya2utf8, murasoli2utf8, mylai2utf8, nakkeeran2utf8, \
-    roman2utf8, tab2utf8, tam2utf8, tscii2utf8
+    roman2utf8, tab2utf8, tam2utf8, tscii2utf8, pallavar2utf8, \
+    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8
 
 from encode2unicode import _all_encodes_, _get_unique_ch, \
                                 _get_unique_common_encodes
@@ -94,6 +95,24 @@ def unicode2tam(text):
 def unicode2tscii(text):
     return unicode2encode(text, tscii2utf8)
 
+def unicode2pallavar(text):
+    return encode2unicode(text, pallavar2utf8)
+
+def unicode2indoweb(text):
+    return encode2unicode(text, indoweb2utf8)
+
+def unicode2koeln(text):
+    return encode2unicode(text, koeln2utf8)
+
+def unicode2libi(text):
+    return encode2unicode(text, libi2utf8)
+
+def unicode2oldvikatan(text):
+    return encode2unicode(text, oldvikatan2utf8)
+
+def unicode2webulagam(text):
+    return encode2unicode(text, webulagam2utf8)
+
 def unicode2auto(unicode_text, encode_text):
     """
     This function will convert unicode (first argument) text into other
@@ -119,7 +138,7 @@ def unicode2auto(unicode_text, encode_text):
     # count common encode chars
     clen = len(_all_common_encodes_)
     msg = "Sorry, couldn't find encode :-(\n"
-    msg += 'Need more words to find unique encode out of %d ' % clen
+    msg += 'Need more words to find unique encode out side of %d ' % clen
     msg += 'common compound characters'
     if not unique_chars:
         print msg

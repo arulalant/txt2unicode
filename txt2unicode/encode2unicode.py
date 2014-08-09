@@ -24,15 +24,21 @@ from collections import OrderedDict
 from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
     dinakaran2utf8, dinamani2utf8, dinathanthy2utf8, \
     kavipriya2utf8, murasoli2utf8, mylai2utf8, nakkeeran2utf8, \
-    roman2utf8, tab2utf8, tam2utf8, tscii2utf8
+    roman2utf8, tab2utf8, tam2utf8, tscii2utf8, pallavar2utf8, \
+    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8
 
-_all_encodes_ = OrderedDict([('anjal2utf8', anjal2utf8), ('bamini2utf8', bamini2utf8),
-     ('boomi2utf8', boomi2utf8), ('dinakaran2utf8', dinakaran2utf8),
-     ('dinamani2utf8', dinamani2utf8), ('dinathanthy2utf8', dinathanthy2utf8),
+_all_encodes_ = OrderedDict([('anjal2utf8', anjal2utf8), 
+     ('bamini2utf8', bamini2utf8), ('boomi2utf8', boomi2utf8), 
+     ('dinakaran2utf8', dinakaran2utf8), ('dinamani2utf8', dinamani2utf8), 
+     ('dinathanthy2utf8', dinathanthy2utf8), 
      ('kavipriya2utf8', kavipriya2utf8), ('murasoli2utf8', murasoli2utf8),
      ('mylai2utf8', mylai2utf8), ('nakkeeran2utf8', nakkeeran2utf8),
      ('roman2utf8', roman2utf8), ('tab2utf8', tab2utf8),
-     ('tam2utf8', tam2utf8), ('tscii2utf8', tscii2utf8)])
+     ('tam2utf8', tam2utf8), ('tscii2utf8', tscii2utf8), 
+     ('pallavar2utf8', pallavar2utf8), ('indoweb2utf8', indoweb2utf8),
+     ('koeln2utf8', koeln2utf8), ('libi2utf8', libi2utf8),
+     ('oldvikatan2utf8', oldvikatan2utf8), ('webulagam2utf8', webulagam2utf8)     
+     ])
 
 
 # By enable this flage, it will write individual encodes unique & common
@@ -105,6 +111,24 @@ def tam2unicode(text):
 
 def tscii2unicode(text):
     return encode2unicode(text, tscii2utf8)
+
+def pallavar2unicode(text):
+    return encode2unicode(text, pallavar2utf8)
+
+def indoweb2unicode(text):
+    return encode2unicode(text, indoweb2utf8)
+
+def koeln2unicode(text):
+    return encode2unicode(text, koeln2utf8)
+
+def libi2unicode(text):
+    return encode2unicode(text, libi2utf8)
+
+def oldvikatan2unicode(text):
+    return encode2unicode(text, oldvikatan2utf8)
+
+def webulagam2unicode(text):
+    return encode2unicode(text, webulagam2utf8)
 
 def _get_unique_ch(text, all_common_encodes):
     """
@@ -243,7 +267,7 @@ def auto2unicode(text):
     # count common encode chars
     clen = len(_all_common_encodes_)
     msg = "Sorry, couldn't find encode :-(\n"
-    msg += 'Need more words to find unique encode out of %d ' % clen
+    msg += 'Need more words to find unique encode out side of %d ' % clen
     msg += 'common compound characters'
     if not unique_chars:
         print msg

@@ -1,21 +1,21 @@
 
 Look at all available files of `encodes_chars` directory [here]() 
 
-[all.encodes.common.chars.txt](all.encodes.common.chars.txt) file contains **commonly available 580 compound characters among all encodings**.
+[all.encodes.common.chars.txt](all.encodes.common.chars.txt) file contains **commonly available 916 compound characters among all encodings**.
 
 So if your input text fully falls only under the compund characters of `all.encodes.common.chars.txt`, then `auto2unicode` will fails. :-(
 
 
-Look at the files [dinamani2utf8.unique.chars.txt](dinamani2utf8.unique.chars.txt) and [nakkeeran2utf8.unique.chars.txt](nakkeeran2utf8.unique.chars.txt). There are fully empty.
+Look at the files [dinamani2utf8.unique.chars.txt](dinamani2utf8.unique.chars.txt),  [nakkeeran2utf8.unique.chars.txt](nakkeeran2utf8.unique.chars.txt) and [murasoli2utf8.unique.chars.txt](murasoli2utf8.unique.chars.txt). There are fully empty!
 
 It seems these two encodes characters are fully falls under commonly available
-580 compound characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt).
+916 compound characters [all.encodes.common.chars.txt](all.encodes.common.chars.txt).
 
-So there is **zero %** chance to identify `dinamani` and `nakkeeran` encodes by using `auto2unicode` function.
+So there is **zero %** chance to identify `dinamani`, `nakkeeran` and `murasoli` encodes by using `auto2unicode` function.
 
-Look at the file [tam2utf8.unique.chars.txt](tam2utf8.unique.chars.txt), it has only one unique compound characters.
+Look at the files [tam2utf8.unique.chars.txt](tam2utf8.unique.chars.txt) and [webulagam2utf8.unique.chars.txt](webulagam2utf8.unique.chars.txt), it has only one unique compound characters.
 
-So there is (1/580)x100 = **0.1724137931034483 %** chances to indetify `tam` encode by using `auto2unicode` function.
+So there is (1/916)x100 = **0.10917030567685589 %** chances to indetify `tam` and `webulagam` encode by using `auto2unicode` function.
 
 
 **Tip** : If you need to find auto encode of your input text, then make sure that
@@ -25,25 +25,31 @@ input text. Find your encode unique compound characters [here]()
 
 | S.No  | Enocdes | Unique Chars|
 | ---- | :--------- | :---------: |
-| 1  |  [anjal](anjal2utf8.unique.chars.txt) | 191 |
-| 2  | [bamini](bamini2utf8.unique.chars.txt)  | 120 |
-| 3  | [boomi](boomi2utf8.unique.chars.txt)  | 168 |
-| 4  | [dinakaran](dinakaran2utf8.unique.chars.txt) | 88 |
-| 5  | [dinamani](dinamani2utf8.unique.chars.txt)  | **0** |
-| 6  | [dinathanthy](dinathanthy2utf8.unique.chars.txt)  | 176  |
-| 7  | [kavipriya](kavipriya2utf8.unique.chars.txt)  | 39 |
-| 8  | [murasoli](murasoli2utf8.unique.chars.txt)  | 53 |
-| 9  | [mylai](mylai2utf8.unique.chars.txt)  | 192 |
-| 10  | [nakkeeran](nakkeeran2utf8.unique.chars.txt)   | **0** |
-| 11 | [roman](roman2utf8.unique.chars.txt)  | 543 |
-| 12  | [tab](tab2utf8.unique.chars.txt)  | 70 |
-| 13 | [tam](tam2utf8.unique.chars.txt)  | **1** |
-| 14 | [tscii](tscii2utf8.unique.chars.txt)   | 214 |
+| 1  |  [Anjal](anjal2utf8.unique.chars.txt) | 190 |
+| 2  | [Bamini](bamini2utf8.unique.chars.txt)  | 118 |
+| 3  | [Boomi](boomi2utf8.unique.chars.txt)  | 99 |
+| 4  | [Dinakaran](dinakaran2utf8.unique.chars.txt) | 87 |
+| 5  | [Dinamani](dinamani2utf8.unique.chars.txt)  | **0** |
+| 6  | [Dinathanthy](dinathanthy2utf8.unique.chars.txt)  | 172  |
+| 7  | [Indoweb](indoweb2utf8.unique.chars.txt)     | 230   |  
+| 8  | [Kavipriya](kavipriya2utf8.unique.chars.txt)  | 39 |
+| 9  | [Koeln](koeln2utf8.unique.chars.txt)     | 109  |
+| 10 | [Libi](libi2utf8.unique.chars.txt)       | 155  |
+| 11  | [Murasoli](murasoli2utf8.unique.chars.txt)  | **0** |
+| 12 | [Mylai](mylai2utf8.unique.chars.txt)  | 189 |
+| 13  | [Nakkeeran](nakkeeran2utf8.unique.chars.txt)   | **0** |
+| 14  | [OldVikatan](oldvikatan2utf8.unique.chars.txt)   |   92  |
+| 15  | [Pallavar](pallavar2utf8.unique.chars.txt)       |  163   |
+| 16 | [Roman](roman2utf8.unique.chars.txt)  | 342 |
+| 17  | [Tab](tab2utf8.unique.chars.txt)  | 62 |
+| 18 | [Tam](tam2utf8.unique.chars.txt)  | **1** |
+| 19 | [Tscii](tscii2utf8.unique.chars.txt)   | 213 |   
+| 20   | [Webulagam](webulagam2utf8.unique.chars.txt)       |  **1**  |
 
 
 | S.No| Common Compound Characters                 | Count |
 | ---| -------------------------------------------------------|:-----:|
-| 1 | [common characters in all encodes](all.encodes.common.chars.txt) | 580 |
+| 1 | [common characters in all encodes](all.encodes.common.chars.txt) | 916 |
 
 
 
@@ -94,7 +100,7 @@ input text. Find your encode unique compound characters [here]()
 
 **"Sorry, couldn't find encode :-(**
 
-**Need more words to find unique encode out of 580 common compound characters"**
+**Need more words to find unique encode out side of 916 common compound characters"**
 
 *It print above msg and return None.*
 
@@ -175,4 +181,4 @@ Regards,
 
 Arulalan.T 
 
-Date : 05.08.2014
+Date : 09.08.2014

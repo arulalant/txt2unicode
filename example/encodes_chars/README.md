@@ -15,7 +15,7 @@ So there is **zero %** chance to identify `dinamani`, `nakkeeran` and `murasoli`
 
 Look at the files [tam2utf8.unique.chars.txt](tam2utf8.unique.chars.txt) and [webulagam2utf8.unique.chars.txt](webulagam2utf8.unique.chars.txt), it has only one unique compound characters.
 
-So there is (1/916)x100 = **0.10917030567685589 %** chances to indetify `tam` and `webulagam` encode by using `auto2unicode` function.
+So there is (1/916)x100 = **0.10917030567685589 %** chances to identify `tam` and `webulagam` encode by using `auto2unicode` function.
 
 
 **Tip** : If you need to find auto encode of your input text, then make sure that

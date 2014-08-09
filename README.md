@@ -78,6 +78,11 @@ Todo:
   * Need to add fonts2unicode converter for the above encodings
   
 
+RoadMap:
+=======
+  * Look roadmap of txt2unicode [here](https://github.com/arulalant/txt2unicode/wiki/RoadMap)
+  
+
 Credits:
 =======
   Thanks to http://kandupidi.com/converter/ and http://www.suratha.com/reader.htm online tools.

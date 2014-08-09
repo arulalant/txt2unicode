@@ -40,7 +40,7 @@ Auto Find Input Encode & Convert to Unicode
 
   `auto2unicode` function will try to find encode of input text. If it is found, then it will convert input text to unicode using appropriate encode converters among available encode converters.
   
-  Out of 20 encodes, 15 encodes can be found by this `auto2unicode`. 
+  **Out of 20 encodes, 15 encodes can be found by this `auto2unicode`.** 
   
   Except `dinamani`, `nakkeeran` , `murasoli` , `tam` & `webulagam` encodes, `auto2unicode` function can find input text's encode and will convert it into unicode. [Why?](example/encodes_chars/README.md)
   

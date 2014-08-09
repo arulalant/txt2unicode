@@ -30,9 +30,9 @@ from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
 __all__ = ['anjal2unicode', 'bamini2unicode', 'boomi2unicode', 
     'dinakaran2unicode', 'dinathanthy2unicode', 'kavipriya2unicode',
     'murasoli2unicode', 'mylai2unicode', 'nakkeeran2unicode',
-    'roman2unicode', 'tab2unicode', 'unicode2tam', 'tscii2unicode',
-    'indoweb2unicode', 'koeln2unicode', 'unicode2libi', 'oldvikatan2unicode',
-    'webulagam2unicode', 'auto2unicode', 'unicode2dinamani', 'pallavar2unicode']
+    'roman2unicode', 'tab2unicode', 'tam2unicode', 'tscii2unicode',
+    'indoweb2unicode', 'koeln2unicode', 'libi2unicode', 'oldvikatan2unicode',
+    'webulagam2unicode', 'auto2unicode', 'dinamani2unicode', 'pallavar2unicode']
     
 _all_encodes_ = OrderedDict([('anjal2utf8', anjal2utf8), 
      ('bamini2utf8', bamini2utf8), ('boomi2utf8', boomi2utf8), 

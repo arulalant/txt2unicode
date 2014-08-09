@@ -38,7 +38,7 @@ def unicode2encode(text, charmap):
         unitxt = ''
         for line in text:
             for val,key in charmap.iteritems():
-                if key in text:
+                if key in line:
                     line = line.replace(key, val)
                 # end of if val in text:
             unitxt += line

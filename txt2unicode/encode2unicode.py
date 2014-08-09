@@ -54,7 +54,7 @@ def encode2unicode(text, charmap):
         unitxt = ''
         for line in text:
             for key,val in charmap.iteritems():
-                if key in text:
+                if key in line:
                     line = line.replace(key, val)
                 # end of if key in text:
             unitxt += line

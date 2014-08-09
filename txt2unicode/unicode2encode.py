@@ -29,7 +29,14 @@ from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
 from encode2unicode import _all_encodes_, _get_unique_ch, \
                                 _get_unique_common_encodes
 
-
+__all__ = ['unicode2anjal', 'unicode2bamini', 'unicode2boomi', 
+    'unicode2dinakaran', 'unicode2dinathanthy', 'unicode2kavipriya',
+    'unicode2murasoli', 'unicode2mylai', 'unicode2nakkeeran',
+    'unicode2roman', 'unicode2tab', 'unicode2tam', 'unicode2tscii',
+    'unicode2indoweb', 'unicode2koeln', 'unicode2libi', 'unicode2oldvikatan',
+    'unicode2webulagam', 'unicode2auto', 'unicode2dinamani', 'unicode2pallavar']
+    
+    
 def unicode2encode(text, charmap):
     '''
     charmap : dictionary which has both encode as key, unicode as value

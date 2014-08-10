@@ -1,4 +1,4 @@
-txt2unicode
+txt2unicode [![Build Status](https://travis-ci.org/arulalant/txt2unicode.png)](https://travis-ci.org/arulalant/txt2unicode)
 ===========
 Tamil Text Encode to Unicode Converter and vice versa.
 

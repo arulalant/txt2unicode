@@ -18,5 +18,5 @@ setup(name='txt2unicode',
       platforms='PC,Linux,Mac',
       classifiers='Natural Language :: Tamil',
       long_description=open('README.md','r','UTF-8').read(),
-      download_url='https://github.com/arulalant/txt2unicode/archive/latest.zip',#pip
+      download_url='https://github.com/arulalant/txt2unicode/archive/master.zip',#pip
       )

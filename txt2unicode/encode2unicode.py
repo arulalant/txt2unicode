@@ -25,14 +25,17 @@ from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
     dinakaran2utf8, dinamani2utf8, dinathanthy2utf8, \
     kavipriya2utf8, murasoli2utf8, mylai2utf8, nakkeeran2utf8, \
     roman2utf8, tab2utf8, tam2utf8, tscii2utf8, pallavar2utf8, \
-    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8
+    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8, \
+    diacritic2utf8, shreelipi2utf8, softview2utf8, tace2utf8, vanavil2utf8
 
 __all__ = ['anjal2unicode', 'bamini2unicode', 'boomi2unicode', 
     'dinakaran2unicode', 'dinathanthy2unicode', 'kavipriya2unicode',
     'murasoli2unicode', 'mylai2unicode', 'nakkeeran2unicode',
     'roman2unicode', 'tab2unicode', 'tam2unicode', 'tscii2unicode',
     'indoweb2unicode', 'koeln2unicode', 'libi2unicode', 'oldvikatan2unicode',
-    'webulagam2unicode', 'auto2unicode', 'dinamani2unicode', 'pallavar2unicode']
+    'webulagam2unicode', 'auto2unicode', 'dinamani2unicode', 
+    'pallavar2unicode', 'diacritic2unicode', 'shreelipi2unicode',
+    'softview2unicode', 'tace2unicode', 'vanavil2unicode']
     
 _all_encodes_ = OrderedDict([('anjal2utf8', anjal2utf8), 
      ('bamini2utf8', bamini2utf8), ('boomi2utf8', boomi2utf8), 
@@ -44,13 +47,16 @@ _all_encodes_ = OrderedDict([('anjal2utf8', anjal2utf8),
      ('tam2utf8', tam2utf8), ('tscii2utf8', tscii2utf8), 
      ('pallavar2utf8', pallavar2utf8), ('indoweb2utf8', indoweb2utf8),
      ('koeln2utf8', koeln2utf8), ('libi2utf8', libi2utf8),
-     ('oldvikatan2utf8', oldvikatan2utf8), ('webulagam2utf8', webulagam2utf8)     
+     ('oldvikatan2utf8', oldvikatan2utf8), ('webulagam2utf8', webulagam2utf8),    
+     ('diacritic2utf8', diacritic2utf8), ('shreelipi2utf8', shreelipi2utf8),
+     ('softview2utf8', softview2utf8),  ('tace2utf8', tace2utf8),
+     ('vanavil2utf8', vanavil2utf8),
      ])
 
 
 # By enable this flage, it will write individual encodes unique & common
 # characters in text file.
-__WRITE_CHARS_TXT = False
+__WRITE_CHARS_TXT = True
 
 
 def encode2unicode(text, charmap):
@@ -137,6 +143,21 @@ def oldvikatan2unicode(text):
 def webulagam2unicode(text):
     return encode2unicode(text, webulagam2utf8)
 
+def diacritic2unicode(text):
+    return encode2unicode(text, diacritic2utf8)
+
+def shreelipi2unicode(text):
+    return encode2unicode(text, shreelipi2utf8)
+    
+def softview2unicode(text):
+    return encode2unicode(text, softview2utf8)
+    
+def tace2unicode(text):
+    return encode2unicode(text, tace2utf8)
+    
+def vanavil2unicode(text):
+    return encode2unicode(text, vanavil2utf8)
+
 def _get_unique_ch(text, all_common_encodes):
     """
         text : encode sample strings
@@ -164,7 +185,7 @@ def _get_unique_ch(text, all_common_encodes):
             for ch in word:
                 if ch.isdigit() or ch in special_chars:
                     # remove special common chars
-                    word = word.repl(ch, '')
+                    word = word.replace(ch, '')
                     continue
                 # end of if ch.isdigit() or ...:
                 # Whola, got unique chars from user passed text

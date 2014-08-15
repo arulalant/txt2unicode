@@ -24,7 +24,8 @@ from encode2utf8 import anjal2utf8, bamini2utf8, boomi2utf8, \
     dinakaran2utf8, dinamani2utf8, dinathanthy2utf8, \
     kavipriya2utf8, murasoli2utf8, mylai2utf8, nakkeeran2utf8, \
     roman2utf8, tab2utf8, tam2utf8, tscii2utf8, pallavar2utf8, \
-    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8
+    indoweb2utf8, koeln2utf8, libi2utf8, oldvikatan2utf8, webulagam2utf8, \
+    diacritic2utf8, shreelipi2utf8, softview2utf8, tace2utf8, vanavil2utf8
 
 from encode2unicode import _all_encodes_, _get_unique_ch, \
                                 _get_unique_common_encodes
@@ -34,7 +35,9 @@ __all__ = ['unicode2anjal', 'unicode2bamini', 'unicode2boomi',
     'unicode2murasoli', 'unicode2mylai', 'unicode2nakkeeran',
     'unicode2roman', 'unicode2tab', 'unicode2tam', 'unicode2tscii',
     'unicode2indoweb', 'unicode2koeln', 'unicode2libi', 'unicode2oldvikatan',
-    'unicode2webulagam', 'unicode2auto', 'unicode2dinamani', 'unicode2pallavar']
+    'unicode2webulagam', 'unicode2auto', 'unicode2dinamani', 
+    'unicode2pallavar', 'unicode2diacritic', 'unicode2shreelipi',
+    'unicode2softview', 'unicode2tace', 'unicode2vanavil']
     
     
 def unicode2encode(text, charmap):
@@ -120,6 +123,21 @@ def unicode2oldvikatan(text):
 def unicode2webulagam(text):
     return encode2unicode(text, webulagam2utf8)
 
+def unicode2diacritic(text):
+    return encode2unicode(text, diacritic2utf8)
+
+def unicode2shreelipi(text):
+    return encode2unicode(text, shreelipi2utf8)
+    
+def unicode2softview(text):
+    return encode2unicode(text, softview2utf8)
+    
+def unicode2tace(text):
+    return encode2unicode(text, tace2utf8)
+    
+def unicode2vanavil(text):
+    return encode2unicode(text, vanavil2utf8)
+    
 def unicode2auto(unicode_text, encode_text):
     """
     This function will convert unicode (first argument) text into other

@@ -5005,7 +5005,6 @@ tam2utf8 = OrderedDict([
 # begin of tscii2utf8 dictionary 
 tscii2utf8 = OrderedDict([
 
-    ("­", "இ"),
     ("þ", "இ"),
     ("‡", "க்ஷ"),
     ("‡¡", "க்ஷா"),
